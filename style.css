@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(46, 7, 62);
+}
+li {
+  font-size: larger;
+  list-style: none;
+  background-color: rgb(46, 7, 62);
+  color: aliceblue;
+}
+
+.container {
+  margin: 3vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+.game-container {
+  margin-right: 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, 11vw);
+  grid-template-rows: repeat(3, 11vw);
+}
+
+.info {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
+  padding: 0px;
+  border: 2px solid;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 8vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.box:hover {
+  background-color: aquamarine;
+}
+.boxtext {
+  margin-right: 10px;
+}
+span {
+  margin-right: 100px;
+  background-color: transparent;
+}
+.bg-t {
+  border-top: 0px;
+}
+.bg-b {
+  border-bottom: 0px;
+}
+.bg-l {
+  border-left: 0px;
+}
+.bg-r {
+  border-right: 0px;
+}
+
+img {
+  width: 20vw;
+  transition: height 1s ease-in-out;
+  height: 0vw;
+}
+button:hover {
+  background-color: blueviolet;
+}
+button {
+  border-radius: 10px;
+  background-color: rgb(167, 116, 215);
+  cursor: pointer;
+  padding: 1vw;
+  margin: 2vw;
+}
+
+@media screen and (max-width: 511px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .game-info {
+    margin-top: 50px;
+  }
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+}
